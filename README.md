@@ -36,12 +36,14 @@ DELETE: Delete a user by id (chk if he/she still have an issued book) && (is the
 
 GET: Get user subscription details >> Date of Subscription >> Valid till >> Is there any fine
 
-/books
-GET: Get all the books POST: Create/Add a new book
+# books
+GET: Get all the books 
+POST: Create/Add a new book
 
 ## /books/{id}
 
-GET: Get a book by id PUT: Update a book by id
+GET: Get a dingle book by id 
+PUT: Update a book by id
 
 ## /books/issued
 
