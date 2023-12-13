@@ -24,7 +24,7 @@ missed by renewal date >> 50/- missed by subscription date >> 100/- missed by re
 
 /users
 POST: Creating a new user
-GET: Getting all users 
+GET: Getting all users
 
 ## /users/{id}
 
@@ -37,12 +37,13 @@ DELETE: Delete a user by id (chk if he/she still have an issued book) && (is the
 GET: Get user subscription details >> Date of Subscription >> Valid till >> Is there any fine
 
 # books
-GET: Get all the books 
+
+GET: Get all the books
 POST: Create/Add a new book
 
 ## /books/{id}
 
-GET: Get a dingle book by id 
+GET: Get a dingle book by id
 PUT: Update a book by id
 
 ## /books/issued
@@ -57,16 +58,38 @@ npm init
 npm i nodemon --save-dev
 npm run dev
 
-...each 
-      "name": "Jane",
-      "surname": "Doe",
-      "email": "user@email.com",
-      "subscriptionType": "Premium",
-      "subscriptionDate": "01/01/2022"
+...each
+"name": "Jane",
+"surname": "Doe",
+"email": "user@email.com",
+"subscriptionType": "Premium",
+"subscriptionDate": "01/01/2022"
 
-...data 
-  "data":{
-    "name" : "rahul",
-    "surname" : "negi"
- 
+...data
+"data":{
+"name" : "rahul",
+"surname" : "negi"
+
     }
+
+    days count from 1-jan-1970
+    new Date()
+
+Tue Dec 12 2023 10:23:36 GMT+0530 (India Standard Time)
+new Date("02/01/2012")
+Wed Feb 01 2012 00:00:00 GMT+0530 (India Standard Time)
+const date = new Date("02/01/2012;");
+undefined
+date;
+Wed Feb 01 2012 00:00:00 GMT+0530 (India Standard Time)
+Math.floor(date/(1000*60*60\*24));
+15370
+let date = new Date();
+VM408:1 Uncaught SyntaxError: Identifier 'date' has already been declared
+
+VM408:1 Uncaught SyntaxError: Identifier 'date' has already been declared
+VM415:2 Uncaught SyntaxError: Unexpected identifier 'Uncaught'
+let dateNew = new Date();
+undefined
+Math.floor(dateNew/(1000*60*60\*24));
+19703
